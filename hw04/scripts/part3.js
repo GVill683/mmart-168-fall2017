@@ -1,4 +1,4 @@
-//Gabriel Villela 
+//Gabriel Villela
 let language = 'English'
 let languageCode = 'en'
 let jsonData
@@ -64,6 +64,27 @@ const getData = () => {
             div.appendChild(textNode)
             document.getElementById("results").appendChild(div)
 
+          /*   status = json.statuses[3]
+            div = document.createElement("div")
+            div.className = "tweet"
+            textNode = document.createTextNode(status.text)
+            div.appendChild(textNode)
+            document.getElementById("results").appendChild(div)
+
+            status = json.statuses[4]
+            div = document.createElement("div")
+            div.className = "tweet"
+            textNode = document.createTextNode(status.text)
+            div.appendChild(textNode)
+            document.getElementById("results").appendChild(div)
+
+            status = json.statuses[5]
+            div = document.createElement("div")
+            div.className = "tweet"
+            textNode = document.createTextNode(status.text)
+            div.appendChild(textNode)
+            document.getElementById("results").appendChild(div) */
+
             // 1. Describe what you think this code is doing.
 
             // 2. output the text of the third tweet:
@@ -75,14 +96,14 @@ const getData = () => {
             // 5. comment the code above, starting from after the clearData,
             //    and ending right before this comment. Then, un-comment the
             //    code below:
-
-            /*json.statuses.forEach(function (status) {
+            //I see all tweets with this one below 
+            json.statuses.forEach(function (status) {
                 div = document.createElement("div")
                 div.className = "tweet"
                 textNode = document.createTextNode(status.text)
                 div.appendChild(textNode)
                 document.getElementById("results").appendChild(div)
-            })*/
+            })
 
         })
 };
