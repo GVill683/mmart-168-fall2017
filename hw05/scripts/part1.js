@@ -19,6 +19,21 @@ const setLanguage = (code) => {
     getData()
 }
 
+const reverseText = (text) => {
+  // spplit the string that is the text and then print each character in reverse
+const a = text.split('')
+a.reverse()
+  return a.join('')
+}
+
+const reverseTweet = (tweetText) => {
+  if (tweetText.indexOf ('#')=== -1) {
+      return tweetText
+    } else {
+        return reverseText(tweetText)
+  }
+}
+
 const clearData = () => {
     const element = document.getElementById('results')
     while (element.firstChild) {
