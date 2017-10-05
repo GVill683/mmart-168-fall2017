@@ -96,7 +96,7 @@ const getData = () => {
             // 5. comment the code above, starting from after the clearData,
             //    and ending right before this comment. Then, un-comment the
             //    code below:
-            //I see all tweets with this one below 
+            //I see all tweets with this one below
             json.statuses.forEach(function (status) {
                 div = document.createElement("div")
                 div.className = "tweet"
