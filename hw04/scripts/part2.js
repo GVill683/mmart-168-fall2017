@@ -1,4 +1,4 @@
-//Gabriel Villela 
+//Gabriel Villela
 let language = 'English'
 let languageCode = 'en'
 let jsonData
@@ -20,7 +20,7 @@ const setLanguage = (code) => {
     document.querySelector("pre").innerHTML = ''
 }
 
-
+//Retrives the data based of the search term
 const getData = () => {
     const term = document.getElementById('term').value
     const baseURL = 'https://mmart168-twitter-proxy.herokuapp.com/1.1/search/tweets.json?q=' + term
