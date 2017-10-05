@@ -19,6 +19,28 @@ const setLanguage = (code) => {
     getData()
 }
 
+const reverseText = (text) => {
+  // spplit the string that is the text and then print each character in reverse
+const a = text.split('')
+a.reverse()
+  return a.join('')
+}
+
+const reverseTweet = (tweetText) => {
+  if (tweetText.indexOf ('#')=== -1) {
+      return reverseText(tweetText)
+    } else {
+        return tweetText
+  }
+}
+
+
+
+
+
+
+
+
 const clearData = () => {
     const element = document.getElementById('results')
     while (element.firstChild) {
@@ -65,7 +87,7 @@ const getData = () => {
             tweetsWithHashtags.forEach((status) => {
                 div = document.createElement('div')
                 div.className = 'tweet'
-                textNode = document.createTextNode(status.text)
+              textNode = document.createTextNode(reverseTweet(status.text))
                 div.appendChild(textNode)
                 document.getElementById('results').appendChild(div)
             })

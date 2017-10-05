@@ -28,9 +28,9 @@ a.reverse()
 
 const reverseTweet = (tweetText) => {
   if (tweetText.indexOf ('#')=== -1) {
-      return tweetText
+      return reverseText(tweetText)
     } else {
-        return reverseText(tweetText)
+        return tweetText
   }
 }
 
@@ -82,7 +82,7 @@ const getData = () => {
             json.statuses.forEach((status) => {
                 div = document.createElement('div')
                 div.className = 'tweet'
-                textNode = document.createTextNode(status.text)
+                textNode = document.createTextNode(reverseTweet(status.text))
                 div.appendChild(textNode)
                 document.getElementById('results').appendChild(div)
             })
