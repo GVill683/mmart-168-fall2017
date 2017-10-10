@@ -16,7 +16,7 @@ This homework will require some googling. As a software engineer, a lot of what 
 6. Verify that you are now on the new branch: `$ git branch` (check that your new branch has an asterisk next to it).
 
 ## PART II: Reading response
-Edit README.MD and write your reading response here!
+This homework is good revision, time to get etch this stuff in my head. 
 
 ## Part III: JavaScript Homework
 
