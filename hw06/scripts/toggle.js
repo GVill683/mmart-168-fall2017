@@ -1,5 +1,5 @@
 // ------------------------------------
-// PART 1
+// PART 1 
 // ------------------------------------
 // Write a function called toggleLike. It takes no parameters
 // toggleLike should find the DOM element with the id 'like'
