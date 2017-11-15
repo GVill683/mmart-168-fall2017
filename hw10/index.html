@@ -6,22 +6,13 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+      <div class="frame">
         <select id="station_list" onchange="getArrivalTimes(this)">
             <option value="">-- Select Your Station--</option>
-            <!--
-            Dynamically append station options here,  using the BART stations API Endpoint:
-            https://api.bart.gov/api/stn.aspx?key=MW9S-E7SL-26DU-VV8V&cmd=stns&json=y
-            -->
         </select>
 
-        <div id="results">
-            <!--
-            Dynamically create an ETD dashboard, using the BART ETD stations API Endpoint:
-            https://api.bart.gov/api/etd.aspx?key=MW9S-E7SL-26DU-VV8V&cmd=etd&orig=DBRK&json=y
-            Don't forget to swutch out the "orig" parameter with the correct
-            station code each time the user selects a different station!
-            -->
-        </div>
+        <div id="results"></div>
+      </div>
 
         <script src="js/main.js"></script>
     </body>
